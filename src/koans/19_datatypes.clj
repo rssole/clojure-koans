@@ -19,7 +19,7 @@
   Award
   (present [this recipient]
     (print (str "You're really the "
-                (:category this) " Oscar, "
+                (.category this) ", "
                 recipient
                 "... sorry."))))
 
