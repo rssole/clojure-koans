@@ -37,13 +37,13 @@
   (= "olleh" (string/reverse "hello"))
 
   "Maybe you want to find the index of the first occurence of a substring"
-  (= 0 (.indexOf "hello world" "hello"))
+  (= 0 (string/index-of "hello world" "hello"))
 
   "Or maybe the last index of the same"
-  (= 13 (.lastIndexOf "hello world, hello" "hello"))
+  (= 13 (string/last-index-of "hello world, hello" "hello"))
 
   "But when something doesn't exist, it turns up negative"
-  (= -1 (.indexOf "hello world" "bob"))
+  (= -1 (string/index-of "hello world" "bob"))
 
   "Sometimes you don't want whitespace cluttering the front and back"
   (= "hello world" (string/trim "  \nhello world \t \n"))

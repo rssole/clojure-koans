@@ -32,5 +32,8 @@
   "Symbolism is all around us"
   (= 'hello (symbol "hello"))
 
+  "What could be equivalent to nothing?"
+  (= __ nil)
+
   "When things cannot be equal, they must be different"
   (not= :fill-in-the-blank {:something "else"}))
