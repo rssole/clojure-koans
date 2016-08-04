@@ -42,8 +42,8 @@
   "Or maybe the last index of the same"
   (= 13 (string/last-index-of "hello world, hello" "hello"))
 
-  "But when something doesn't exist, it turns up negative"
-  (= -1 (string/index-of "hello world" "bob"))
+  "But when something doesn't exist, nothing is found"
+  (nil? (string/index-of "hello world" "bob"))
 
   "Sometimes you don't want whitespace cluttering the front and back"
   (= "hello world" (string/trim "  \nhello world \t \n"))
